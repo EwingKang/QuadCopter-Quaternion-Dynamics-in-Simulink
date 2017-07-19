@@ -19,7 +19,8 @@ Likewise, all the result of the simulation is export to the workspace for furthe
   
 There are two files you may run to generate visual data: 
 * OS4dynamics_plot_01.m  
-* OS4dynamics_animation_01.m  
+* OS4dynamics_animation_01.m   
+  
 The animation script will generate a .avi video file in the current folder. Please rename it to keep the next generation from overwrite it.  
 NOTE: some of the data might be missing and require manual marked-out on the code. This is because some of the data might require the input of controller, which will be release in another project. Contact me if you have any problem running these program.  
   
