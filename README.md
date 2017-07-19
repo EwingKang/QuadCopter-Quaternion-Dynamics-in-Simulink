@@ -4,10 +4,22 @@ Full quadcopter dynamics simulation using quaternion with propeller aerodynamics
 # Introduction
 This is a pure-simulink quadrotor dynamics simulation without the requirement of any toolbox. The core kinematic is written using "Qauternion". Quaternion is a famous method of representing attitude in space that preserve the intuativness and "complete" i.e. no pole. The quadrotor dynamics is dominate by simple rigid body dynamics, thus becoming a popular solution for autonomous vehicle. I'm trying to model the dynamics as best as I can get it. Because I'm studying in AeroAstro department, I put more effort on the simulation of aerodynamics/rotational dynamics of the propeller. This includes the washing disk delay/damping of the air, interaction of propeller subject to different airflow, and ground effect. It is not my own work of proposing these aerodynamic model and definately not the quaternion part, you may find my reference in the following section. The name of this simulink "OS4" is actually the name a quadrotor model created by Samir BOUABDALLAH in EPFL (ÉCOLE POLYTECHNIQUE FÉDÉRALE DE LAUSANNE). The thesis is my main reference for creating this simulation and is stated in the reference.
 
+# Requirement
+* MATLAB 2014b
+* Simulink
+* no toolbox is needed
+
 # Usage  
 When the simulation started, it triggers the <OS4dynamics_01_init.m> and create multiple data in the workspace of MATLAB. This includes the initial condition of the system and all the physical parameters. That is to say, if you want to change anything about the dynamics, the only file you'll need to modify is <OS4dynamics_01_init.m>  
+
 Likewise, all the result of the simulation is export to the workspace for further analysis, plotting, animating, and so on.   
   
+There are two files you may run to generate visual data: 
+* OS4dynamics_plot_01.m  
+* OS4dynamics_animation_01.m  
+The animation script will generate a .avi video file in the current folder. Please rename it to keep the next generation from overwrite it.
+NOTE: some of the data might be missing and require manual marked-out on the code. This is because some of the data might require the input of controller, which will be release in another project. Contact me if you have any problem running those
+  
   
 # Reference
 
