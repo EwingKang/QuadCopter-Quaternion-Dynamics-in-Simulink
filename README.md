@@ -7,6 +7,16 @@ Quaternion is a famous method of representing attitude in space that preserve th
 I'm trying to model the dynamics as best as I can get it. Because I'm studying in AeroAstro department, I put more effort on the simulation of aerodynamics/rotational dynamics of the propeller. This includes the washing disk delay/damping of the air, interaction of propeller subject to different airflow, and ground effect.   
 It is not my own work of proposing these aerodynamic model and definately not the quaternion part, you may find my reference in the following section. The name of this simulink "OS4" is actually the name a quadrotor model created by Samir BOUABDALLAH in EPFL (ÉCOLE POLYTECHNIQUE FÉDÉRALE DE LAUSANNE). The thesis is my main reference for creating this simulation and is stated in the reference.
 
+# Videos (click to open youtube)
+- 四旋翼模擬(1) OS4+X4 dynamic with Quaternion controller  
+    [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/JR5E15dRfcU/0.jpg)](https://www.youtube.com/watch?v=JR5E15dRfcU&list=PLIoHW5r8RCLBNhIyHIRzPDx4Sl9qRcPUL&index=6)  
+- 四旋翼模擬(2) OS4+X4 dynamic with Integral backstepping attitude controller  
+    [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/E_wItL6DRs0/0.jpg)](https://www.youtube.com/watch?v=E_wItL6DRs0&list=PLIoHW5r8RCLBNhIyHIRzPDx4Sl9qRcPUL&index=6)  
+- 四旋翼模擬(3-5) Quadrotor dynamic with 4 different controller  
+    [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/w4sC13hqhC4/0.jpg)](https://www.youtube.com/watch?v=w4sC13hqhC4&list=PLIoHW5r8RCLBNhIyHIRzPDx4Sl9qRcPUL&index=5)  
+
+
+
 # Requirement
 * MATLAB 2014b
 * Simulink
